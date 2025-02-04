@@ -1,0 +1,3969 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", serif;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+
+  background-color: #fff;
+  padding: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header .logo-part {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo-part .logo-text {
+  color: #ee3a43;
+
+  font-family: "Fugaz One", serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+header nav ul a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+header nav ul a:hover {
+  color: #ee3a43;
+}
+
+header .buttons-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .buttons-part .cart-btn {
+  transition: 1s;
+}
+header .buttons-part .cart-btn img {
+  cursor: pointer;
+  width: 90%;
+  transition: 1s;
+  position: relative;
+}
+header .buttons-part .cart-btn::before {
+  position: absolute;
+  content: "0";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  background-color: #212121;
+  border-radius: 50%;
+  font-size: 8px;
+  margin-top: -14px;
+  margin-left: 10px;
+}
+header .buttons-part .cart-btn:hover {
+  padding: 10px 25px;
+}
+
+header .buttons-part .menu-btn img {
+  cursor: pointer;
+  width: 90%;
+  transition: 1s;
+}
+
+header .buttons-part .menu-btn img:hover {
+  width: 100%;
+  padding: 10px 25px;
+}
+
+header .buttons-part .Contact-Us-btn {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+header .buttons-part .Contact-Us-btn:hover {
+  background-color: #ee3a43;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+
+main .head-of-the-website {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  background: url("./img/Section.png");
+  width: 100%;
+  background-size: contain;
+
+  gap: 30px;
+}
+main .head-of-the-website .burger-img {
+  width: calc(50% - 15px);
+  transition: 1s;
+}
+
+main .head-of-the-website .burger-img:hover {
+  padding: 0px 30px;
+}
+
+main .head-of-the-website .details {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  gap: 10px;
+}
+main .head-of-the-website .details .small-title {
+  color: #ffc222;
+  font-size: 18px;
+}
+
+main .head-of-the-website .details .big-title {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 1500px;
+}
+
+main .head-of-the-website .details .offer {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .head-of-the-website .details .offer-price {
+  font-size: 70px;
+  font-style: normal;
+
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 900px;
+}
+
+main .head-of-the-website .details .order-btn {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .head-of-the-website .details .order-btn:hover {
+  background-color: #ee3a43;
+  padding: 10px 25px;
+}
+
+main .popular-food-items {
+  font-family: "Oswald", serif;
+  padding: 25px 0px;
+  background: url("./img/Section2.png");
+}
+main .popular-food-items .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+}
+main .popular-food-items .first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .popular-food-items .first .text-part {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+main .popular-food-items .first .text-part span:nth-child(1) {
+  color: #00a149;
+  font-size: 20px;
+}
+main .popular-food-items .first .text-part span:nth-child(2) {
+  color: #212121;
+  font-size: 40px;
+}
+
+main .popular-food-items .first .buttons-part {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+main .popular-food-items .first .buttons-part i:nth-child(2) {
+  cursor: pointer;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 1s;
+  font-size: 10px;
+}
+
+main .popular-food-items .first .buttons-part i:nth-child(1) {
+  cursor: pointer;
+  width: 50px;
+  font-size: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 1s;
+}
+main .popular-food-items .first .buttons-part i:nth-child(1):hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+main .popular-food-items .first .buttons-part i:nth-child(2):hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clicked-arrow {
+  color: #f5f8fd;
+  background-color: #ffc222;
+}
+
+.non-clicked-arrow {
+  color: #ffc222;
+  background-color: #f5f8fd;
+}
+
+main .popular-food-items .second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+main .popular-food-items .second .card {
+  width: calc(25% - 20px);
+  background: url("/img/6.png");
+  cursor: pointer;
+  height: 400px;
+  background-color: #f5f8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 20px;
+  transition: 1s;
+}
+main .popular-food-items .second .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items .second .card .text-part {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+main .popular-food-items .second .card .text-part .title {
+  color: #212121;
+  font-size: 35px;
+  font-weight: 600px;
+}
+main .popular-food-items .second .card .text-part hr {
+  background-color: #ffc222;
+  border: none;
+  height: 2px;
+  font-size: 40px;
+  width: 100%;
+}
+main .popular-food-items .second .card .text-part .products {
+  color: #ffc222;
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+main .popular-food-items .thired {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+main .popular-food-items .thired .img-2 {
+  width: calc(70% - 10px);
+  transition: 1s;
+}
+main .popular-food-items .thired .img-2:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items .thired .img-1 {
+  width: calc(30% - 10px);
+  transition: 1s;
+}
+main .popular-food-items .thired .img-1:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items .thired img:nth-child(1) {
+  width: 100%;
+}
+main .popular-food-items .thired img:nth-child(2) {
+  width: 100%;
+}
+
+main .popular-food-items .fourth {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.text-yallow {
+  color: #ffc222;
+}
+
+main .special-offer-of-the-website {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: url("./img/Section66.png");
+  gap: 30px;
+}
+main .special-offer-of-the-website .burger-img {
+  width: calc(50% - 15px);
+  transition: 1s;
+}
+main .special-offer-of-the-website .burger-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+main .special-offer-of-the-website .burger-img:hover {
+  padding: 0px 30px;
+}
+
+main .special-offer-of-the-website .details {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  gap: 10px;
+}
+main .special-offer-of-the-website .details .small-title {
+  color: #ffc222;
+  font-size: 18px;
+}
+
+main .special-offer-of-the-website .details .big-title {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 1500px;
+}
+
+main .special-offer-of-the-website .details .offer {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .special-offer-of-the-website .details .offer-price {
+  font-size: 70px;
+  font-style: normal;
+
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 900px;
+}
+
+main .special-offer-of-the-website .details .order-btn {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .special-offer-of-the-website .details .order-btn:hover {
+  background-color: #ee3a43;
+  padding: 10px 25px;
+}
+.popular-fast-food {
+  padding: 20px 0px;
+  font-family: "Oswald", serif;
+  background-color: #f5f8fd;
+}
+
+.popular-fast-food .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popular-fast-food .first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.popular-fast-food .first span:nth-child(1) {
+  color: #00a149;
+  font-size: 18px;
+}
+
+.popular-fast-food .first span:nth-child(2) {
+  color: #212121;
+  font-size: 40px;
+}
+
+main .popular-fast-food .order-btn {
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .popular-fast-food .order-btn:hover {
+  background-color: #ffc222;
+  padding: 10px 25px;
+}
+main .popular-fast-food .second {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+main .popular-fast-food .second .card .img-part {
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+}
+
+main .popular-fast-food .second .card .img-part i {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 16px;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.non-clicked {
+  background-color: #212121;
+  color: #fff;
+}
+.clicked {
+  background-color: #ffc222;
+  color: #ee284b;
+}
+
+main .popular-fast-food .second .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+main .popular-fast-food .second .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(25% - 40px);
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main .popular-fast-food .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-fast-food .second .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+main .popular-fast-food .second .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+main .popular-fast-food .second .text-part .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+main .popular-fast-food .second .text-part .price span:nth-child(1) {
+  color: #212121;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #ffc222;
+}
+
+main .popular-fast-food .second .text-part .price span:nth-child(2) {
+  color: #5c5c5b;
+  text-decoration: line-through;
+}
+main .popular-fast-food .second .text-part .price span:nth-child(3) {
+  color: #5c5c5b;
+}
+
+main .Where-Quality-Meet-Excellent-Service {
+  background-color: #f5f8fd;
+  color: #212121;
+  padding: 40px 0px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 70px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .burger-img {
+  width: calc(50% - 35px);
+  transition: 1s;
+}
+main .Where-Quality-Meet-Excellent-Service .burger-img img{
+  width: 100%;
+  object-fit: cover;
+
+}
+main .Where-Quality-Meet-Excellent-Service .details {
+  width: calc(50% - 35px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  gap: 20px;
+}
+main .Where-Quality-Meet-Excellent-Service .details .small-title {
+  color: #ffc222;
+  font-size: 18px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .details .big-title {
+  font-size: 80px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 1500px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .details .offer {
+  font-size: 16px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .details .offer-price {
+  font-size: 70px;
+  font-style: normal;
+
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 900px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .details .order-btn {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .Where-Quality-Meet-Excellent-Service .details .order-btn:hover {
+  background-color: #ee3a43;
+  padding: 10px 25px;
+}
+
+.red-text {
+  color: #ff4848;
+}
+
+main .Where-Quality-Meet-Excellent-Service .btn-with-para {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+main .Where-Quality-Meet-Excellent-Service .btn-with-para h3 {
+  color: #ee284b;
+}
+
+main .Where-Quality-Meet-Excellent-Service .small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .Where-Quality-Meet-Excellent-Service .small-cards .card {
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 10px);
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+main .Where-Quality-Meet-Excellent-Service .small-cards .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+main .cards-with-icon {
+  background-color: #f5f8fd;
+}
+main .cards-with-icon .row {
+  background-color: #ee284b;
+  padding: 25px 40px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Oswald", serif;
+}
+
+main .cards-with-icon .row .card {
+  width: calc(25% - 40px);
+}
+
+main .DELIVERY-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f5f8fd;
+  gap: 30px;
+}
+main .DELIVERY-card .row {
+  background-color: #ee284b;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+main .DELIVERY-card .burger-img {
+  width: calc(50% - 15px);
+  transition: 1s;
+}
+
+main .DELIVERY-card .burger-img:hover {
+  padding: 0px 30px;
+}
+
+main .DELIVERY-card .details {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  gap: 10px;
+}
+main .DELIVERY-card .details .small-title {
+  color: #ffc222;
+  font-size: 18px;
+}
+
+main .DELIVERY-card .details .big-title {
+  color: #fff;
+  font-size: 60px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 1500px;
+}
+
+main .DELIVERY-card .details .offer {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .DELIVERY-card .details .offer-price {
+  font-size: 70px;
+  font-style: normal;
+
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 900px;
+}
+
+main .DELIVERY-card .details .order-btn {
+  background-color: #fff;
+  color: #ee284b;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .DELIVERY-card .details .order-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+main .end-of-the-page {
+  background-color: #f5f8fd;
+  padding: 70px 0px;
+  font-family: "Oswald", serif;
+}
+
+main .end-of-the-page .red-card {
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  gap: 50px;
+  background-color: #ee284b;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+main .end-of-the-page .red-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .end-of-the-page .lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+main .end-of-the-page .lists .about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 20px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .end-of-the-page .lists .Menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 20px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+
+main .end-of-the-page .lists ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 16px;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 400px;
+
+  gap: 10px;
+}
+
+main .end-of-the-page .lists ul li a {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+  transition: 1s;
+}
+
+main .end-of-the-page .lists ul li a:hover {
+  color: #ffc222;
+}
+
+main .end-of-the-page h2 {
+  text-transform: uppercase;
+  text-decoration: underline #ffc222;
+}
+
+main .end-of-the-page .Newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+main .end-of-the-page .Newsletter button {
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+main .end-of-the-page .Newsletter button:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+main .end-of-the-page .Newsletter input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: #212121 solid;
+  background-color: #fff;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+footer {
+  background-color: #ee284b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+footer .end {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer .end a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+footer .end a:hover {
+  color: #ffc222;
+}
+
+
+.overlay{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.display-flex{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.overlay .card .img-part {
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.overlay .card .img-part i {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 16px;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.non-clicked {
+  background-color: #212121;
+  color: #fff;
+}
+.clicked {
+  background-color: #ffc222;
+  color: #ee284b;
+}
+
+.overlay .card img {
+  width: 100%;
+  object-fit:cover;
+  border-radius: 8px;
+}
+
+.overlay .card {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+  background-color: #f5f8fd;
+  color: black;
+  padding: 20px;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: black;
+}
+
+.overlay .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.overlay .text-part .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.overlay .text-part .price span:nth-child(1) {
+  color: #212121;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #ffc222;
+}
+
+.overlay .text-part .price span:nth-child(2) {
+  color: black;
+  text-decoration: line-through;
+}
+.overlay .text-part .price span:nth-child(3) {
+  color: black;
+}
+
+
+.back-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+.back-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+
+
+
+
+.overlay-sub-mass{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-sub-mass .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-sub-mass .row{
+  font-family: "Oswald", serif;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:50%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay-sub-mass .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.display{
+  display: flex;
+
+}
+
+
+
+
+
+.overlay-sub-mass-about{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-sub-mass-about .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-sub-mass-about .row{
+  font-family: "Oswald", serif;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:80%;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay-sub-mass-about .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.display{
+  display: flex;
+
+}
+
+
+.overlay-sub-mass-coming-soon{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-sub-mass-coming-soon .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-sub-mass-coming-soon .row{
+  font-family: "Oswald", serif;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:50%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay-sub-mass-coming-soon .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.display{
+  display: flex;
+
+}
+
+
+
+
+.overlay-sub-mass-error{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-sub-mass-error .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-sub-mass-error .row{
+  font-family: "Oswald", serif;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:50%;
+  border-radius: 10px;
+  transition: 1s;
+}
+.overlay-sub-mass-error h3{
+  font-size: 1rem;
+}
+.overlay-sub-mass-error .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.display{
+  display: flex;
+
+}
+
+.overlay-contact-us-card{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-contact-us-card .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-contact-us-card .row{
+  font-family: "Oswald", serif;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:80%;
+  border-radius: 10px;
+  transition: 1s;
+}
+.overlay-contact-us-card h3{
+  font-size: 1rem;
+}
+.overlay-contact-us-card .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.back-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.back-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.contact-us-card .emailInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+.contact-us-card .messageInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+  resize: vertical;
+  overflow-y: auto;
+  height: 100px;
+
+}
+
+
+.side-bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+ height: fit-content;
+ padding: 40px;
+  background-color: #ee284b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius:20px ;
+  transition: 1s;
+}
+
+.side-bar-out{
+  transform: translateX(100%);
+}
+.side-bar-in{
+  transform: translateX(0);
+}
+.close-btn{
+
+
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+}
+
+
+.side-bar .row{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+.side-bar h3{
+  font-size: 1.2rem;
+}
+
+.side-bar  ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.side-bar ul a {
+  color: #f5f8fd;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+.side-bar  nav ul a:hover {
+  color: #ee3a43;
+}
+
+
+
+
+
+.display{
+  display: flex;
+
+}
+
+.overlay-order-now-card{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-order-now-card img{
+  width: 100%;
+  object-fit: cover;
+}
+.overlay-order-now-card .img-part{
+  width: calc(50% - 10px);
+}
+
+.overlay-order-now-card .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-order-now-card .row{
+  font-family: "Oswald", serif;
+  flex-direction:row;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:80%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay-order-now-card .row .input-field{
+  font-family: "Oswald", serif;
+  flex-direction:column;
+align-items: center;
+justify-content: center;
+  gap: 10px ;
+  background-color: #f5f8fd;
+
+ 
+  width:calc(50% - 10px);
+  border-radius: 10px;
+  transition: 1s;
+}
+.overlay-order-now-card .buttons-part{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-order-now-card h3{
+  font-size: 1rem;
+}
+.overlay-order-now-card .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.back-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.back-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.order-now-card .emailInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+
+.order-now-card .phoneNumberInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+.order-now-card .options option{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+.order-now-card .options{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+
+
+
+.display{
+  display: flex;
+
+}
+
+/*************************************************/
+main .popular-food-items-specific {
+  margin-bottom: 50px;
+}
+main .popular-food-items-specific .row{
+  display: flex;
+  flex-direction:row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+main .popular-food-items-specific  .card .img-part {
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+}
+
+main .popular-food-items-specific  .card .img-part i {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 16px;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.non-clicked {
+  background-color: #212121;
+  color: #fff;
+}
+.clicked {
+  background-color: #ffc222;
+  color: #ee284b;
+}
+
+main .popular-food-items-specific .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+main .popular-food-items-specific .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(25% - 40px);
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  background-color:#ff4848;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main .popular-food-items-specific .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc222;
+
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color:#fff;
+  font-size: 0.7rem;
+}
+
+main .popular-food-items-specific .text-part .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(1) {
+  color: #212121;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #ffc222;
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(2) {
+  color: #5c5c5b;
+  text-decoration: line-through;
+}
+main .popular-food-items-specific .text-part .price span:nth-child(3) {
+  color: #5c5c5b;
+}
+
+.head-of-foods{
+  color: #212121;
+}
+
+.head-of-foods .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 25px;
+
+}
+
+:root {
+  --cheese: #F7C946;
+  --tomato: #D84B2A;
+  --crust: #D19952;
+  --peperoni: #A2371D;
+  --olive: #1D1D1D;
+
+}
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255); 
+  z-index: 9999999; 
+
+ 
+}
+
+.display-none{
+  display: none;
+}
+
+
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 50%;
+}
+
+.pizza-slice {
+  position: absolute;
+  width: 65%;
+  height: 50%;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.slice-1 {
+  top: 5%;
+  left: 15%;
+}
+
+.slice-2 {
+  top: 18%;
+  left: 33%;
+  opacity: 0;
+  z-index: 2;
+  transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  animation-name: slice;
+}
+
+.slice-3 {
+  top: 39%;
+  left: 27%;
+  opacity: 0;
+  animation-name: slice-2;
+  transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+}
+
+.slice-4 {
+  top: 38%;
+  left: 5%;
+  opacity: 0;
+  transform: rotate(216deg);
+  -webkit-transform: rotate(216deg);
+  -moz-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  -o-transform: rotate(216deg);
+  animation-name: slice-3;
+}
+
+.slice-5 {
+  top: 17%;
+  left: -3%;
+  opacity: 0;
+  transform: rotate(288deg);
+  -webkit-transform: rotate(288deg);
+  -moz-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  -o-transform: rotate(288deg);
+  animation-name: slice-4;
+}
+
+.crust {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: var(--crust);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cheese {
+  position: absolute;
+  top: 20%;
+  left: 17.5%;
+  width: 65%;
+  height: 65%;
+  background: var(--cheese);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.peperoni{
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--peperoni);
+}
+
+.p-1 {
+  top: 10%;
+  left: 35%;
+}
+.p-2 {
+  top: 38%;
+  right: 16%;
+}
+
+.p-3 {
+  bottom: 10%;
+  left: 26%;
+}
+.olive{
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: var(--olive);
+  border-radius: 50%;
+
+}
+.o-1 {
+  top: 10%;
+  left: 24%;
+  transform: scale(0.6);
+}
+
+.o-2 {
+  top: 26%;
+  left: 22%;
+  transform: scale(0.7);
+}
+
+.o-3 {
+  top: 42%;
+  left: 32%;
+  transform: scale(0.5);
+}
+
+.o-4 {
+  top: 55%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.o-5 {
+  bottom: 15%;
+  right: 40%;
+  transform: scale(0.75);
+}
+
+.o-6 {
+  top: 15%;
+  right: 28%;
+  transform: scale(0.9);
+}
+
+.o-7 {
+  top: 25%;
+  right: 18%;
+  transform: scale(0.5);
+}
+
+
+@keyframes slice {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slice-2 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slice-3 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slice-4 {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width:200px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  p {
+    font-size: 1em;
+  }
+}
+
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 100%;
+  }
+
+  main .Where-Quality-Meet-Excellent-Service {
+    background-color: #f5f8fd;
+    color: #212121;
+    padding: 20px 0px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 70px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .burger-img {
+    width: calc(50% - 35px);
+    transition: 1s;
+  }
+  main .Where-Quality-Meet-Excellent-Service .burger-img img{
+    width: 100%;
+    object-fit: cover;
+  
+  }
+  main .Where-Quality-Meet-Excellent-Service .details {
+    width: calc(50% - 35px);
+    display: flex;
+    padding-right:10px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 20px;
+  }
+  main .Where-Quality-Meet-Excellent-Service .details .small-title {
+    color: #ffc222;
+    font-size: 18px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .big-title {
+    font-size: 50px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .offer {
+    font-size: 8px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .offer-price {
+    font-size: 50px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .order-btn {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .order-btn:hover {
+    background-color: #ee3a43;
+    padding: 8px 10px;
+  }
+  
+  .red-text {
+    color: #ff4848;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .btn-with-para {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+  main .Where-Quality-Meet-Excellent-Service .btn-with-para h3 {
+    color: #ee284b;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card {
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(50% - 10px);
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+}
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
+  .burger-img img {
+    width: 90%;
+  }
+
+  main .head-of-the-website .details .small-title {
+    font-size: 10px;
+  }
+
+  main .head-of-the-website .details .big-title {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+
+
+  main .special-offer-of-the-website .details .small-title {
+    color: #ffc222;
+    font-size: 10px;
+  }
+  
+  main .special-offer-of-the-website .details .big-title {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .special-offer-of-the-website .details .offer {
+    color: #fff;
+    font-size: 10px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .special-offer-of-the-website .details .offer-price {
+    font-size: 35px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .special-offer-of-the-website .details .order-btn {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .special-offer-of-the-website .details .order-btn:hover {
+    background-color: #ee3a43;
+    padding: 10px 15px;
+  }
+  .popular-fast-food {
+    padding: 10px 0px;
+    font-family: "Oswald", serif;
+    background-color: #f5f8fd;
+  }
+  
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+
+  }
+  header .container .row {
+    font-size: 10px;
+  }
+
+  header .buttons-part .cart-btn::before {
+    position: absolute;
+    content: "0";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 10px;
+
+    height: 10px;
+    background-color: #212121;
+    border-radius: 50%;
+    font-size: 6px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  header .container .row .logo-part {
+    justify-content: flex-start;
+  }
+
+  header .container .row .logo-part .logo-img {
+    width: 30%;
+  }
+
+  header .container .row .logo-part .logo-text {
+    font-size: 15px;
+  }
+  header .container .row a {
+    font-size: 10px;
+  }
+
+  header .container .row .logo-part img {
+    width: 70%;
+  }
+  header .container .row .buttons-part img {
+    width: 60%;
+  }
+  header .container .row .buttons-part {
+    font-size: 10px;
+  }
+
+  main .popular-food-items {
+    font-family: "Oswald", serif;
+    padding: 25px 0px;
+    background: url("./img/Section2.png");
+  }
+  main .popular-food-items .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .popular-food-items .first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main .popular-food-items .first .text-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .popular-food-items .first .text-part span:nth-child(1) {
+    color: #00a149;
+    font-size: 15px;
+  }
+  main .popular-food-items .first .text-part span:nth-child(2) {
+    color: #212121;
+    font-size: 30px;
+  }
+
+  main .popular-food-items .first .buttons-part {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  main .popular-food-items .first .buttons-part i:nth-child(2) {
+    cursor: pointer;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 1s;
+    font-size: 10px;
+  }
+
+  main .popular-food-items .first .buttons-part i:nth-child(1) {
+    cursor: pointer;
+    width: 50px;
+    font-size: 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 1s;
+  }
+  main .popular-food-items .first .buttons-part i:nth-child(1):hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  main .popular-food-items .first .buttons-part i:nth-child(2):hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .clicked-arrow {
+    color: #f5f8fd;
+    background-color: #ffc222;
+  }
+
+  .non-clicked-arrow {
+    color: #ffc222;
+    background-color: #f5f8fd;
+  }
+
+  main .popular-food-items .second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  main .popular-food-items .second .card {
+    width: 50%;
+    background: url("/img/6.png");
+    height: 400px;
+    background-color: #f5f8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+    transition: 1s;
+  }
+
+  main .popular-food-items .second .card img {
+    width: 100%;
+ 
+    object-fit: cover;
+  }
+  main .popular-food-items .second .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  main .popular-food-items .second .card .text-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main .popular-food-items .second .card .text-part .title {
+    color: #212121;
+    font-size: 35px;
+    font-weight: 600px;
+  }
+  main .popular-food-items .second .card .text-part hr {
+    background-color: #ffc222;
+    border: none;
+    height: 2px;
+    font-size: 40px;
+    width: 100%;
+  }
+  main .popular-food-items .second .card .text-part .products {
+    color: #ffc222;
+    font-size: 20px;
+    font-weight: 400px;
+  }
+
+  main .popular-food-items .thired {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+  }
+
+  main .popular-food-items .thired .img-2 {
+    width: calc(70% - 10px);
+    transition: 1s;
+  }
+  main .popular-food-items .thired .img-2:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  main .popular-food-items .thired .img-1 {
+    width: calc(30% - 10px);
+    transition: 1s;
+  }
+  main .popular-food-items .thired .img-1:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  main .popular-food-items .thired img:nth-child(1) {
+    width: 100%;
+  }
+  main .popular-food-items .thired img:nth-child(2) {
+    width: 100%;
+  }
+
+  main .popular-food-items .fourth {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  .text-yallow {
+    color: #ffc222;
+  }
+
+
+  main .Where-Quality-Meet-Excellent-Service .details {
+    width: calc(50% - 35px);
+    display: flex;
+    padding-right:20px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 20px;
+  }
+
+  main .cards-with-icon {
+    background-color: #f5f8fd;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  main .cards-with-icon .row {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ee284b;
+    gap: 10px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Oswald", serif;
+  }
+  
+  main .cards-with-icon .row .card {
+    width: calc(50% - 40px);
+  }
+  
+
+  main .DELIVERY-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f5f8fd;
+    gap: 30px;
+  }
+  main .DELIVERY-card .row {
+    margin: 0px 20px;
+    background-color: #ee284b;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  main .DELIVERY-card .burger-img {
+    width: calc(50% - 15px);
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .burger-img:hover {
+    padding: 0px 30px;
+  }
+  
+  main .DELIVERY-card .details {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 10px;
+  }
+  main .DELIVERY-card .details .small-title {
+    color: #ffc222;
+    font-size: 18px;
+  }
+  
+  main .DELIVERY-card .details .big-title {
+    color: #fff;
+    font-size: 60px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .DELIVERY-card .details .offer {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .DELIVERY-card .details .offer-price {
+    font-size: 70px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .DELIVERY-card .details .order-btn {
+    background-color: #fff;
+    color: #ee284b;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .details .order-btn:hover {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 10px 25px;
+  }
+  
+  main .end-of-the-page {
+    background-color: #f5f8fd;
+    padding: 70px 20px;
+    margin: auto;
+    font-family: "Oswald", serif;
+  }
+  main .end-of-the-page .row{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .end-of-the-page .red-card {
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    gap: 50px;
+    background-color: #ee284b;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  main .end-of-the-page .red-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  main .end-of-the-page .lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  main .end-of-the-page .lists .about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .end-of-the-page .lists .Menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .end-of-the-page .lists ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 16px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 400px;
+  
+    gap: 10px;
+  }
+  
+  main .end-of-the-page .lists ul li a {
+    text-decoration: none;
+    color: #212121;
+    transition: 1s;
+  }
+  
+  main .end-of-the-page .lists ul li a:hover {
+    color: #ffc222;
+  }
+  
+  main .end-of-the-page h2 {
+    text-transform: uppercase;
+    text-decoration: underline #ffc222;
+  }
+  
+  main .end-of-the-page .Newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  main .end-of-the-page .Newsletter button {
+    background-color: #ee284b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .end-of-the-page .Newsletter button:hover {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 10px 25px;
+  }
+  
+  main .end-of-the-page .Newsletter input {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: #212121 solid;
+    background-color: #fff;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  }
+  
+.overlay .card {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  transition: 1s;
+}
+main .popular-food-items-specific {
+  margin-top:200px ;
+  margin-bottom: 50px;
+}
+main .popular-food-items-specific .row{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+main .popular-food-items-specific  .card .img-part {
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+}
+
+main .popular-food-items-specific  .card .img-part i {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 16px;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.non-clicked {
+  background-color: #212121;
+  color: #fff;
+}
+.clicked {
+  background-color: #ffc222;
+  color: #ee284b;
+}
+
+main .popular-food-items-specific .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+main .popular-food-items-specific .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  background-color:#ff4848;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main .popular-food-items-specific .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc222;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color:#fff;
+ 
+}
+
+main .popular-food-items-specific .text-part .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(1) {
+  color: #212121;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #ffc222;
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(2) {
+  color: #5c5c5b;
+  text-decoration: line-through;
+}
+main .popular-food-items-specific .text-part .price span:nth-child(3) {
+  color: #5c5c5b;
+}
+
+  
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  main .head-of-the-website .details .small-title {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+
+  main .head-of-the-website .details .big-title {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .popular-fast-food .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .popular-fast-food .first {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .popular-fast-food .first span:nth-child(1) {
+    color: #00a149;
+    font-size: 18px;
+  }
+  
+  .popular-fast-food .first span:nth-child(2) {
+    color: #212121;
+    font-size: 40px;
+  }
+  
+  main .popular-fast-food .order-btn {
+    background-color: #ee284b;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .popular-fast-food .order-btn:hover {
+    background-color: #ffc222;
+    padding: 10px 25px;
+  }
+  main .popular-fast-food .second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  main .popular-fast-food .second .card .img-part {
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  main .popular-fast-food .second .card .img-part i {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 16px;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  
+  .non-clicked {
+    background-color: #212121;
+    color: #fff;
+  }
+  .clicked {
+    background-color: #ffc222;
+    color: #ee284b;
+  }
+  
+  main .popular-fast-food .second .card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  main .popular-fast-food .second .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  main .popular-fast-food .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  main .popular-fast-food .second .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  main .popular-fast-food .second .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  main .popular-fast-food .second .text-part .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  main .popular-fast-food .second .text-part .price span:nth-child(1) {
+    color: #212121;
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: #ffc222;
+  }
+  
+  main .popular-fast-food .second .text-part .price span:nth-child(2) {
+    color: #5c5c5b;
+    text-decoration: line-through;
+  }
+  main .popular-fast-food .second .text-part .price span:nth-child(3) {
+    color: #5c5c5b;
+  }
+
+  main .Where-Quality-Meet-Excellent-Service {
+    background-color: #f5f8fd;
+    color: #212121;
+    padding: 20px 0px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 70px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .burger-img {
+    width: calc(50% - 35px);
+    transition: 1s;
+  }
+  main .Where-Quality-Meet-Excellent-Service .burger-img img{
+    width: 100%;
+    object-fit: cover;
+  
+  }
+  main .Where-Quality-Meet-Excellent-Service .details {
+    width: calc(50% - 35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 20px;
+  }
+  main .Where-Quality-Meet-Excellent-Service .details .small-title {
+    color: #ffc222;
+    font-size: 18px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .big-title {
+    font-size: 25px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .offer {
+    font-size: 4px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .offer-price {
+    font-size: 25px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .order-btn {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .order-btn:hover {
+    background-color: #ee3a43;
+    padding: 8px 10px;
+  }
+  
+  .red-text {
+    color: #ff4848;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .btn-with-para {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+  main .Where-Quality-Meet-Excellent-Service .btn-with-para h3 {
+    color: #ee284b;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card {
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px;
+    width: calc(50% - 10px);
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  main .DELIVERY-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f5f8fd;
+    gap: 30px;
+  }
+  main .DELIVERY-card .row {
+    margin: 0px 20px;
+    background-color: #ee284b;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  main .DELIVERY-card .burger-img {
+    width: calc(50% - 15px);
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .burger-img:hover {
+    padding: 0px 30px;
+  }
+  
+  main .DELIVERY-card .details {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 10px;
+  }
+  main .DELIVERY-card .details .small-title {
+    color: #ffc222;
+    font-size: 8px;
+  }
+  
+  main .DELIVERY-card .details .big-title {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .DELIVERY-card .details .offer {
+    color: #fff;
+    font-size: 8px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .DELIVERY-card .details .offer-price {
+    font-size: 30px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .DELIVERY-card .details .order-btn {
+    background-color: #fff;
+    color: #ee284b;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .details .order-btn:hover {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 10px 15px;
+  }
+
+
+}
+
+/* sm */
+@media (max-width: 665px) {
+  .container {
+    width: 100%;
+  }
+  header .container .row {
+    font-size: 8px;
+  }
+  header .container .row .logo-part {
+    width: 20%;
+  }
+
+  header .container .row .logo-part .logo-img {
+    width: 60%;
+  }
+
+  header .container .row .logo-part .logo-text {
+    font-size: 10px;
+  }
+
+  header .container .row ul img {
+    width: 25%;
+  }
+
+  header .container .row ul {
+    gap: 4px;
+  }
+
+  header .container .row a {
+    font-size: 8px;
+  }
+
+  header .container .row .logo-part img {
+    width: 70%;
+  }
+  header .container .row .buttons-part img {
+    width: 70%;
+  }
+  header .container .row .buttons-part {
+    font-size: 10px;
+  }
+
+  header .container .row .buttons-part .Contact-Us-btn {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+
+    padding: 5px 10px;
+  }
+}
+
+/* xs */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  header .container .row {
+    font-size: 6px;
+  }
+  header .container .row .logo-part {
+    width: 15%;
+  }
+
+  header .container .row .logo-part .logo-img {
+    width: 50%;
+  }
+  header .container .row .logo-part .logo-text {
+    font-size: 6px;
+  }
+
+  header .container .row ul img {
+    width: 20%;
+  }
+
+  header .container .row ul {
+    gap: 3px;
+  }
+
+  header .container .row a {
+    font-size: 6px;
+  }
+
+  header .container .row .logo-part img {
+    width: 60%;
+  }
+  header .container .row .buttons-part img {
+    width: 40%;
+  }
+  header .container .row .buttons-part {
+    font-size: 8px;
+    gap: 6px;
+  }
+
+  header .container .row .buttons-part .Contact-Us-btn {
+    font-size: 6px;
+    letter-spacing: 0.3px;
+
+    padding: 3px 7px;
+  }
+
+  main .head-of-the-website {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background: url("./img/Section.png");
+    width: 100%;
+    background-size: contain;
+    gap: 30px;
+  }
+
+  main .head-of-the-website .burger-img {
+    width: 50%;
+    transition: 1s;
+  }
+
+  main .head-of-the-website .burger-img:hover {
+    padding: 0px 30px;
+  }
+
+  main .head-of-the-website .details {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 10px;
+  }
+  main .head-of-the-website .details .small-title {
+    color: #ffc222;
+    font-size: 10px;
+  }
+
+  main .head-of-the-website .details .big-title {
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+
+  main .head-of-the-website .details .offer {
+    color: #fff;
+    font-size: 10px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+
+  main .head-of-the-website .details .offer-price {
+    font-size: 30px;
+    font-style: normal;
+
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  main .head-of-the-website .details .order-btn img {
+    width: 25%;
+  }
+  main .head-of-the-website .details .order-btn {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+
+  main .head-of-the-website .details .order-btn:hover {
+    background-color: #ee3a43;
+    padding: 10px 15px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+
+
+  main .special-offer-of-the-website .details .small-title {
+    color: #ffc222;
+    font-size: 6px;
+  }
+  
+  main .special-offer-of-the-website .details .big-title {
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .special-offer-of-the-website .details .offer {
+    color: #fff;
+    font-size: 6px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .special-offer-of-the-website .details .offer-price {
+    font-size: 20px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .special-offer-of-the-website .details .order-btn {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 3px 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+    
+  main .special-offer-of-the-website .details .order-btn img{
+    width: 20%;
+  }
+  
+  main .special-offer-of-the-website .details .order-btn:hover {
+    background-color: #ee3a43;
+    padding: 7px 10px;
+  }
+  .popular-fast-food {
+    padding: 10px 0px;
+    font-family: "Oswald", serif;
+    background-color: #f5f8fd;
+  }
+  main .cards-with-icon .row .card{
+    font-size: 8px;
+  }
+  main .cards-with-icon .row .card img{
+    width:20%;
+  }
+  main .Where-Quality-Meet-Excellent-Service .small-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card img{
+  width: 20%;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card {
+    border-radius: 10px;
+    font-size: 8px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Oswald", serif;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .small-cards .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  main .Where-Quality-Meet-Excellent-Service .details .small-title {
+    color: #ffc222;
+    font-size: 12px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .big-title {
+    font-size: 18px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .Where-Quality-Meet-Excellent-Service .details .para {
+    font-size: 10px;
+}
+
+
+
+}
+
+@media (max-width: 490px) {
+  main .DELIVERY-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f5f8fd;
+    gap: 30px;
+  }
+  main .DELIVERY-card .row {
+    margin: 0px 20px;
+    background-color: #ee284b;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  main .DELIVERY-card .burger-img {
+    width: calc(50% - 15px);
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .burger-img:hover {
+    padding: 0px 30px;
+  }
+  
+  main .DELIVERY-card .details {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    gap: 10px;
+  }
+  main .DELIVERY-card .details .small-title {
+    color: #ffc222;
+    font-size: 4px;
+  }
+  
+  main .DELIVERY-card .details .big-title {
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 1500px;
+  }
+  
+  main .DELIVERY-card .details .offer {
+    color: #fff;
+    font-size: 4px;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  
+  main .DELIVERY-card .details .offer-price {
+    font-size: 15px;
+    font-style: normal;
+  
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900px;
+  }
+  
+  main .DELIVERY-card .details .order-btn {
+    background-color: #fff;
+    color: #ee284b;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    transition: 1s;
+  }
+  
+  main .DELIVERY-card .details .order-btn:hover {
+    background-color: #ffc222;
+    color: #fff;
+    padding: 10px 15px;
+  }
+}
