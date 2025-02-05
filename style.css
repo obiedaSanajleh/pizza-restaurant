@@ -3610,14 +3610,14 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
     font-size: 6px;
   }
   header .container .row .logo-part {
-    width: 15%;
+    width: 20%;
   }
 
   header .container .row .logo-part .logo-img {
-    width: 50%;
+    width:50%;
   }
   header .container .row .logo-part .logo-text {
-    font-size: 6px;
+    font-size: 9px;
   }
 
   header .container .row ul img {
@@ -3626,6 +3626,7 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
 
   header .container .row ul {
     gap: 3px;
+    display: none !important;
   }
 
   header .container .row a {
@@ -3633,7 +3634,7 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
   }
 
   header .container .row .logo-part img {
-    width: 60%;
+    width: 100%;
   }
   header .container .row .buttons-part img {
     width: 40%;
@@ -3644,10 +3645,10 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
   }
 
   header .container .row .buttons-part .Contact-Us-btn {
-    font-size: 6px;
+    font-size: 9px;
     letter-spacing: 0.3px;
 
-    padding: 3px 7px;
+    padding: 6px 14px;
   }
 
   main .head-of-the-website {
@@ -3742,6 +3743,20 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
   main .head-of-the-website .details .order-btn:hover {
     background-color: #ee3a43;
     padding: 10px 15px;
+  }
+  main .popular-food-items .second .card {
+    width: 75%;
+    background: url("/img/6.png");
+    cursor: pointer;
+    height: 400px;
+    background-color: #f5f8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+    transition: 1s;
   }
 
   footer {
@@ -3865,6 +3880,302 @@ main .popular-food-items-specific .text-part .price span:nth-child(3) {
     font-size: 10px;
 }
 
+.overlay-order-now-card{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-order-now-card img{
+  width: 100%;
+  object-fit: cover;
+}
+.overlay-order-now-card .img-part{
+  width: calc(50% - 10px);
+}
+
+.overlay-order-now-card .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-order-now-card .row{
+  font-family: "Oswald", serif;
+  flex-direction:row;
+align-items: center;
+justify-content: center;
+  gap: 20px ;
+  padding: 20px;
+  background-color: #f5f8fd;
+  width:80%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.overlay-order-now-card .row .input-field{
+  font-family: "Oswald", serif;
+  flex-direction:column;
+align-items: center;
+justify-content: center;
+  gap: 10px ;
+  background-color: #f5f8fd;
+
+ 
+  width:calc(50% - 10px);
+  border-radius: 10px;
+  transition: 1s;
+}
+.overlay-order-now-card .buttons-part{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-order-now-card h3{
+  font-size: 1rem;
+}
+.overlay-order-now-card .row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.done-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.done-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.back-btn{
+  background-color: #ee284b;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  transition: 1s;
+}
+.back-btn:hover {
+  background-color: #ffc222;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.order-now-card .emailInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 0.7rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+
+.order-now-card .phoneNumberInputBox{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 0.7rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+.order-now-card .options option{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+.order-now-card .options{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  font-weight: 400px;
+  font-style: normal;
+
+}
+
+
+
+.display{
+  display: flex;
+
+}
+
+
+main .popular-food-items-specific {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+main .popular-food-items-specific .row{
+  display: flex;
+  flex-direction:row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main .popular-food-items-specific  .card .img-part {
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+}
+
+main .popular-food-items-specific  .card .img-part i {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 16px;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.non-clicked {
+  background-color: #212121;
+  color: #fff;
+}
+.clicked {
+  background-color: #ffc222;
+  color: #ee284b;
+}
+
+main .popular-food-items-specific .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+main .popular-food-items-specific .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:75%;
+  font-family: "Oswald", serif;
+  align-items: center;
+  justify-content: center;
+  background-color:#ff4848;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+main .popular-food-items-specific .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc222;
+
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+main .popular-food-items-specific .text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color:#fff;
+  font-size: 0.7rem;
+}
+
+main .popular-food-items-specific .text-part .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(1) {
+  color: #212121;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #ffc222;
+}
+
+main .popular-food-items-specific .text-part .price span:nth-child(2) {
+  color: #5c5c5b;
+  text-decoration: line-through;
+}
+main .popular-food-items-specific .text-part .price span:nth-child(3) {
+  color: #5c5c5b;
+}
+
+.head-of-foods{
+  color: #212121;
+}
+
+.head-of-foods .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 25px;
+
+}
 
 
 }
